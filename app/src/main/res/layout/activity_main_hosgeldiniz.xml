@@ -7,23 +7,39 @@
     tools:context=".MainHosgeldiniz">
 
     <Button
+        android:id="@+id/btnMapDeneme"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/buttonarkaplan"
+        android:fontFamily="@font/fredoka_one"
+        android:text="Go Map"
+        android:textAllCaps="false"
+        android:textColor="@color/ConstraintColor"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kayitParola" />
+
+    <Button
         android:id="@+id/btnCikisYap"
         android:layout_width="250dp"
         android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="247dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginBottom="160dp"
         android:background="@drawable/buttonarkaplan"
         android:fontFamily="@font/fredoka_one"
-        android:text="Log out"
+        android:text="Log Out"
         android:textAllCaps="false"
         android:textColor="@color/ConstraintColor"
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kullaniciParola" />
+        app:layout_constraintTop_toBottomOf="@+id/kayitParola" />
 
     <TextView
         android:id="@+id/textView"
@@ -33,7 +49,7 @@
         android:layout_marginTop="64dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/fredoka_one"
-        android:text="   Welcome!"
+        android:text="@string/welcome"
         android:textColor="@color/material_dynamic_neutral_variant30"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,12 +65,13 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/fredoka_one"
-        android:text="Password"
+        android:text="@string/password"
         android:textColor="@color/material_dynamic_neutral60"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kullaniciBilgisi" />
+        app:layout_constraintTop_toBottomOf="@+id/kullaniciBilgisi"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
 
     <TextView
         android:id="@+id/kullaniciBilgisi"
@@ -64,12 +81,13 @@
         android:layout_marginTop="33dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/fredoka_one"
-        android:text="Username"
+        android:text="@string/username"
         android:textColor="@color/material_dynamic_neutral60"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -81,5 +99,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="TODO" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

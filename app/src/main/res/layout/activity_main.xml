@@ -22,7 +22,8 @@
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/girisParola" />
+        app:layout_constraintTop_toBottomOf="@+id/girisParola"
+        tools:ignore="DuplicateClickableBoundsCheck" />
 
     <Button
         android:id="@+id/btnKayitOl"
@@ -54,7 +55,8 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGirisYap" />
+        app:layout_constraintTop_toBottomOf="@+id/btnGirisYap"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
 
     <TextView
         android:id="@+id/textView"
@@ -105,10 +107,12 @@
         android:hint="Username"
         android:inputType="textPersonName"
         android:padding="10dp"
+        android:textColorHint="#757575"
         android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView2"
